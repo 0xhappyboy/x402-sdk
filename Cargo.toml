@@ -1,6 +1,6 @@
 [package]
 name = "x402-sdk"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 authors = ["happyboy <superhappyboy1995@gmail.com>"]
 description = "aptos network tool."

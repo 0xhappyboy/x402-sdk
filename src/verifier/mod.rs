@@ -1,12 +1,8 @@
-// verifier/mod.rs
 use crate::types::{ChainType, PaymentRequest, PaymentVerification};
 use async_trait::async_trait;
 use std::collections::HashMap;
 
-pub mod aptos;
 pub mod evm;
-pub mod solana;
-pub mod sui;
 
 #[derive(Debug)]
 pub enum VerificationError {
