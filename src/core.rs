@@ -82,22 +82,10 @@ impl X402 {
                     .map_err(EngineError::VerificationError)?;
                 Box::new(evm_verifier)
             }
-            ChainType::Aptos(_) => {
-                use crate::verifier::aptos::AptosVerifier;
-                let aptos_verifier = AptosVerifier::new(rpc_url, chain_type.clone());
-                Box::new(aptos_verifier)
-            }
-            ChainType::Sui(_) => {
-                use crate::verifier::sui::SuiVerifier;
-                let sui_verifier = SuiVerifier::new(rpc_url, chain_type.clone());
-                Box::new(sui_verifier)
-            }
-            ChainType::Solana(_) => {
-                use crate::verifier::solana::SolanaVerifier;
-                let solana_verifier = SolanaVerifier::new(rpc_url, chain_type.clone());
-                Box::new(solana_verifier)
-            }
             ChainType::Custom(_) => {
+                return Err(EngineError::ChainNotSupported(chain_type));
+            }
+            _ => {
                 return Err(EngineError::ChainNotSupported(chain_type));
             }
         };
@@ -151,6 +139,7 @@ impl X402 {
     ) -> Result<PaymentRequest, EngineError> {
         let config = self.config_manager.get_config();
         let default_chain = self.config_manager.get_default_chain_config()?;
+
         let amount = custom_amount
             .map(|s| s.to_string())
             .unwrap_or_else(|| config.payments.default_amount.clone());
