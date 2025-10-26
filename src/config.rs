@@ -147,21 +147,6 @@ impl ConfigManager {
             .unwrap_or_else(|| "0x0000000000000000000000000000000000000000".to_string())
     }
 
-    pub fn get_rpc_url(&self, chain_type: &ChainType) -> Option<String> {
-        self.get_chain_config(chain_type)
-            .and_then(|chain| chain.rpc_url.clone())
-            .or_else(|| {
-                let env_key = match chain_type {
-                    ChainType::Evm(_) => "EVM_RPC_URL",
-                    ChainType::Aptos(_) => "APTOS_RPC_URL",
-                    ChainType::Sui(_) => "SUI_RPC_URL",
-                    ChainType::Solana(_) => "SOLANA_RPC_URL",
-                    ChainType::Custom(_) => "CUSTOM_RPC_URL",
-                };
-                self.environment.get(env_key).cloned()
-            })
-    }
-
     pub fn update_config<F>(&mut self, updater: F)
     where
         F: FnOnce(&mut X402Config),
