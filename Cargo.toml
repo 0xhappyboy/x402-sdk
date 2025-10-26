@@ -5,7 +5,7 @@ edition = "2024"
 authors = ["happyboy <superhappyboy1995@gmail.com>"]
 description = "aptos network tool."
 keywords = ["http", "x402", "finance", "web"]
-license = "Apache 2.0"
+license = "Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/0xhappyboy/x402-sdk"
 
