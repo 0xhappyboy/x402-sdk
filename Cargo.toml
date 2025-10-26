@@ -1,0 +1,12 @@
+[package]
+name = "x402-sdk"
+version = "0.1.0"
+edition = "2024"
+authors = ["happyboy <superhappyboy1995@gmail.com>"]
+description = "aptos network tool."
+keywords = ["http", "x402", "finance", "web"]
+license = "Apache 2.0"
+readme = "README.md"
+repository = "https://github.com/0xhappyboy/x402-sdk"
+
+[dependencies]
