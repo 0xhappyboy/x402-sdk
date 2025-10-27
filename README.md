@@ -6,9 +6,9 @@ A Rust implementation of the x402 protocol, inspired by @coinbase/x402.
 X402 is a blockchain payment protocol SDK based on the HTTP 402 Payment Required status code, providing developers with a complete on-chain payment verification solution. Through simple API integration, you can implement blockchain-based paid access control for any digital resource.
 </h4>
 <p align="center">
-![X402 Logo](https://img.shields.io/badge/X402-Payment%20Protocol-blue?style=for-the-badge&logo=ethereum)
-![Rust](https://img.shields.io/badge/Rust-1.70%2B-orange?style=for-the-badge&logo=rust)
-![License](https://img.shields.io/badge/License-Apache%202.0-green?style=for-the-badge)
+<img src="https://img.shields.io/badge/X402-Payment%20Protocol-blue?style=for-the-badge&logo=ethereum" alt="License">
+<img src="https://img.shields.io/badge/Rust-1.70%2B-orange?style=for-the-badge&logo=rust" alt="License">
+<a href="https://github.com/0xhappyboy/x402-sdk/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-green?style=for-the-badge" alt="License"></a>
 </p>
 <p align="center">
 <a href="./README_zh-CN.md">简体中文</a> | <a href="./README.md">English</a>
