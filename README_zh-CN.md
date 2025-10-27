@@ -12,13 +12,13 @@ X402 是基于 HTTP 402 Payment Required 状态码的区块链支付协议 SDK, 
 <a href="./README_zh-CN.md">简体中文</a> | <a href="./README.md">English</a>
 </p>
 
-# Depend
+# 📦 Depend
 
 ```
 cargo add x402-sdk
 ```
 
-# Architecture overview
+# 🏗 Architecture overview
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
@@ -42,7 +42,7 @@ cargo add x402-sdk
 | **Aptos**     | ⏳           |
 | **Sui**       | ⏳           |
 
-# Example
+# 🎮 Example
 
 ## Axum
 
