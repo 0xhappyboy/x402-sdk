@@ -6,7 +6,9 @@ x402 协议的 Rust 实现，灵感来自 @coinbase/x402.
 X402 是基于 HTTP 402 Payment Required 状态码的区块链支付协议 SDK, 为开发者提供完整的链上支付验证解决方案。
 </h4>
 <p align="center">
-  <a href="https://github.com/0xhappyboy/x402-sdk/LICENSE"><img src="https://img.shields.io/badge/License-Apache2.0-d1d1f6.svg?style=flat&labelColor=1C2C2E&color=BEC5C9&logo=googledocs&label=license&logoColor=BEC5C9" alt="License"></a>
+<img src="https://img.shields.io/badge/X402-Payment%20Protocol-blue?style=for-the-badge&logo=ethereum" alt="License">
+<img src="https://img.shields.io/badge/Rust-1.70%2B-orange?style=for-the-badge&logo=rust" alt="License">
+<a href="https://github.com/0xhappyboy/x402-sdk/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-green?style=for-the-badge" alt="License"></a>
 </p>
 <p align="center">
 <a href="./README_zh-CN.md">简体中文</a> | <a href="./README.md">English</a>
