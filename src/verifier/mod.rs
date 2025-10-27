@@ -3,6 +3,7 @@ use async_trait::async_trait;
 use std::collections::HashMap;
 
 pub mod evm;
+pub mod solana;
 
 #[derive(Debug)]
 pub enum VerificationError {
@@ -15,6 +16,7 @@ pub enum VerificationError {
     InvalidCurrency,
     Timeout,
     ParseError(String),
+    Error(String),
 }
 
 impl std::fmt::Display for VerificationError {
@@ -29,6 +31,7 @@ impl std::fmt::Display for VerificationError {
             Self::InvalidCurrency => write!(f, "Invalid currency"),
             Self::Timeout => write!(f, "Verification timeout"),
             Self::ParseError(msg) => write!(f, "Parse error: {}", msg),
+            Self::Error(msg) => write!(f, "Error: {}", msg),
         }
     }
 }

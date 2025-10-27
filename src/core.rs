@@ -82,8 +82,10 @@ impl X402 {
                     .map_err(EngineError::VerificationError)?;
                 Box::new(evm_verifier)
             }
-            ChainType::Custom(_) => {
-                return Err(EngineError::ChainNotSupported(chain_type));
+            ChainType::Solana(_) => {
+                use crate::verifier::solana::SolanaVerifier;
+                let solana_verifier = SolanaVerifier::new();
+                Box::new(solana_verifier)
             }
             _ => {
                 return Err(EngineError::ChainNotSupported(chain_type));

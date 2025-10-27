@@ -3,7 +3,7 @@
 </h1>
 <h4 align="center">
 A Rust implementation of the x402 protocol, inspired by @coinbase/x402.
-X402 is a blockchain payment protocol SDK based on the HTTP 402 Payment Required status code, providing developers with a complete on-chain payment verification solution. Through simple API integration, you can implement blockchain-based paid access control for any digital resource.
+X402 is a blockchain payment protocol SDK based on the HTTP 402 Payment Required status code, providing developers with a complete on-chain payment verification solution. 
 </h4>
 <p align="center">
 <img src="https://img.shields.io/badge/X402-Payment%20Protocol-blue?style=for-the-badge&logo=ethereum" alt="License">
@@ -35,23 +35,14 @@ cargo add x402-sdk
 
 # 🚀Multi-chain Support
 
-## EVM-compatible chains
-
-```
-Ethereum, Polygon, BSC, Arbitrum, Optimism, Avalanche, Base
-```
-
-## Move Ecosystem
-
-```
-Aptos, Sui
-```
-
-# Solana
-
-```
-Full Solana payment verification
-```
+| **OrderType** | **progress** |
+| :------------ | :----------- |
+| **Ethereum**  | ✅           |
+| **Base**      | ✅           |
+| **BSC**       | ⏳           |
+| **Solana**    | ✅           |
+| **Aptos**     | ⏳           |
+| **Sui**       | ⏳           |
 
 # Example
 
