@@ -9,6 +9,9 @@ X402 is a blockchain payment protocol SDK based on the HTTP 402 Payment Required
 <img src="https://img.shields.io/badge/X402-Payment_Protocol-8A2BE2.svg?style=flat&labelColor=2F1E2E&color=FFB6C1&logo=ethereum&label=Protocol&logoColor=FFB6C1" alt="License">
 <img src="https://img.shields.io/badge/Rust-1.70%2B-FF7F50.svg?style=flat&labelColor=2E2F1E&color=98FB98&logo=rust&label=Language&logoColor=98FB98" alt="License">
 <a href="https://github.com/0xhappyboy/x402-sdk/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache2.0-9370DB.svg?style=flat&labelColor=1C2C2E&color=BEC5C9&logo=googledocs&label=License&logoColor=BEC5C9" alt="License"></a>
+<a href="https://crates.io/crates/x402-sdk">
+<img src="https://img.shields.io/badge/crates-x402--sdk-20B2AA.svg?style=flat&labelColor=0F1F2D&color=FFD700&logo=rust&logoColor=FFD700">
+</a>
 </p>
 <p align="center">
 <a href="./README_zh-CN.md">简体中文</a> | <a href="./README.md">English</a>
